@@ -215,6 +215,7 @@ img{
 
 .section_title h1{
     margin-bottom: 10px;
+    font-size: 26px;
 }
 
 .section_title::before{
@@ -279,6 +280,7 @@ img{
     border-radius: 25px;
     display: inline-block;
     margin: 10px;
+    margin-left: 0;
 }
 
 .custom_btn:hover{
@@ -329,6 +331,17 @@ img{
 
 /* educartion and experience */
 
+.subsection_title{
+    display: flex;
+    justify-content: space-between ;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.subsection_title h4{
+    flex-basis: 47%;
+}
+
 .education_experience{
     display: flex;
     flex-wrap: wrap;
@@ -342,14 +355,37 @@ img{
 
 .child_education, .child_experience{
     padding: 20px 0px;
+    position: relative;
 }
 
+.child_education::before, .child_experience::before{
+    position: absolute;
+    content: "";
+    background: var(--pink);
+    width: 15px;
+    height: 15px;
+    left: -21px;
+    border-radius: 50%;
+
+}
 
 .education, .experience{
     background: #fff;
     flex-basis: 47%;
-    padding: 20px;
+    padding: 20px 30px;
     border-radius: 5px;
+    position: relative;
+}
+
+.education::before, .experience::before{
+    position: absolute;
+    content: "";
+    height: 80%;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--pink);
+    width: 2px;
 }
 
 .education span, .experience span{
