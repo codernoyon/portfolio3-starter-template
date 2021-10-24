@@ -187,6 +187,8 @@ img{
     border: 1px solid var(--pink);
     border-radius: 3px;
     width: 30px;
+    height: 30px;
+    line-height: 30px;
     text-align: center;
     color: var(--pink);
 }
@@ -331,16 +333,6 @@ img{
 
 /* educartion and experience */
 
-.subsection_title{
-    display: flex;
-    justify-content: space-between ;
-    width: 100%;
-    margin: 10px 0px;
-}
-
-.subsection_title h4{
-    flex-basis: 47%;
-}
 
 .education_experience{
     display: flex;
@@ -351,6 +343,10 @@ img{
 
 .education_experience h3{
     margin: 5px 0;
+}
+
+.subsection_title h4{
+    font-size: 20px;
 }
 
 .child_education, .child_experience{
@@ -364,6 +360,7 @@ img{
     background: var(--pink);
     width: 15px;
     height: 15px;
+    top:0;
     left: -21px;
     border-radius: 50%;
 
@@ -380,7 +377,7 @@ img{
 .education::before, .experience::before{
     position: absolute;
     content: "";
-    height: 84%;
+    height: 83%;
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
