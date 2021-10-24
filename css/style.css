@@ -108,6 +108,7 @@ img{
     background: #fff;
     transition: 0.5s;
     backdrop-filter: blur(10px);
+    z-index: 3;
 }
 
 .nav .logo{
@@ -207,6 +208,41 @@ img{
     height: auto;
 }
 
+.section_title{
+    position: relative;
+    margin: 10px 0px;
+}
+
+.section_title h1{
+    margin-bottom: 10px;
+}
+
+.section_title::before{
+    position: absolute;
+    content: "";
+    background: var(--pink);
+    width: 40%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+
+}
+
+.section_title::after{
+    position: absolute;
+    content: "";
+    background: var(--pink);
+    width: 15%;
+    height: 3px;
+    left: 0;
+    bottom: -5px;
+
+}
+
+.highlight{
+    color: var(--pink);
+}
+
 .about_description h3{
     margin: 10px 0;
 }
@@ -218,6 +254,7 @@ img{
 .personal_information{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
     flex-wrap: wrap;
     margin: 10px 0;
@@ -229,18 +266,99 @@ img{
 }
 
 .child_personal li{
+    padding: 10px 0px;
     margin-bottom: 15px;
     border-bottom: 1px solid rgb(202, 202, 202);
+    font-size: 14px;
 }
 
 .custom_btn{
     background: var(--pink);
     color: #fff;
-    padding: 10px 20px;
+    padding: 8px 20px;
     border-radius: 25px;
     display: inline-block;
+    margin: 10px;
 }
 
 .custom_btn:hover{
     background: #000;
+}
+
+/* skill secton section */
+
+.single_skill{
+    margin-bottom: 30px;
+}
+
+.skill_parcentage{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.bar{
+    display: block;
+    background: rgb(197, 197, 197);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.html, .css, .javascript, .bootstrap{
+    background: var(--pink);
+    display: block;
+    height: 5px;
+}
+
+.html{
+    width: 90%;
+}
+
+.css{
+    width: 80%;
+}
+
+.javascript{
+    width: 50%;
+}
+
+.bootstrap{
+    width: 60%;
+}
+
+/* educartion and experience */
+
+.education_experience{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.education_experience h3{
+    margin: 5px 0;
+}
+
+.child_education, .child_experience{
+    padding: 20px 0px;
+}
+
+
+.education, .experience{
+    background: #fff;
+    flex-basis: 47%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.education span, .experience span{
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+
+.education p, .experience p{
+    font-size: 14px;
+    margin: 5px 0;
 }
