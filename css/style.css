@@ -396,3 +396,40 @@ img{
     font-size: 14px;
     margin: 5px 0;
 }
+
+/* service section  */
+
+#service{
+    align-items: flex-start;
+    padding: 60px;
+}
+
+.service_box{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.child_service{
+    flex-basis: 32%;
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 5px;
+    border: 1px solid lightgrey
+}
+
+.child_service h3{
+    margin: 10px 0
+}
+
+.child_service .icon{
+    font-size: 30px;
+    color: var(--pink)
+}
+
+.service_01, .service_02, .service_03{
+    margin-bottom: 30px;
+}

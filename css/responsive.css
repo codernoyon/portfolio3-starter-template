@@ -17,7 +17,7 @@
 
     .mobilemenu_bars{
         display: inline-block;
-        position: absolute;
+        position: fixed;
         top: 20px;
         right: 20px;
         font-size: 20px;
@@ -56,6 +56,25 @@
     }
 
     .education{
+        margin-bottom: 30px;
+    }
+
+    /* service section */
+    .child_service{
+        flex-basis: 100%;
+    }
+
+    #service{
+        display: block ;
+        height: auto;
+    }
+
+    .service_box{
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .service_04, .service_05{
         margin-bottom: 30px;
     }
 }
