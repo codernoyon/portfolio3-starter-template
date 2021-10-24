@@ -380,7 +380,7 @@ img{
 .education::before, .experience::before{
     position: absolute;
     content: "";
-    height: 80%;
+    height: 84%;
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
