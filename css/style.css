@@ -192,6 +192,8 @@ img{
     text-align: center;
     cursor: pointer;
     color: var(--pink);
+    background: #f1f1f1;
+    z-index: 6;
 }
 
 .mobilemenu_cross{
@@ -225,7 +227,7 @@ img{
     position: absolute;
     content: "";
     background: var(--pink);
-    width: 40%;
+    width: 30%;
     height: 3px;
     left: 0;
     bottom: 0;
@@ -432,9 +434,19 @@ img{
     margin: 10px 0
 }
 
+.child_service p{
+    font-size: 14px;
+}
+
 .child_service .icon{
-    font-size: 30px;
-    color: var(--pink)
+    font-size: 20px;
+    color: var(--pink);
+    background: #f1f1f1;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    border-radius: 50%;
 }
 
 .service_01, .service_02, .service_03{
