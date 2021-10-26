@@ -180,6 +180,10 @@ img{
     color: rgb(180, 180, 180);
 }
 
+.copyright_sing a{
+    color: var(--blue);
+}
+
 /* mobile menu icon */
 
 .mobilemenu_bars{
@@ -216,6 +220,7 @@ img{
 .section_title{
     position: relative;
     margin: 10px 0px;
+    display: inline-block;
 }
 
 .section_title h1{
@@ -227,7 +232,7 @@ img{
     position: absolute;
     content: "";
     background: var(--pink);
-    width: 30%;
+    width: 40%;
     height: 3px;
     left: 0;
     bottom: 0;
@@ -238,7 +243,7 @@ img{
     position: absolute;
     content: "";
     background: var(--pink);
-    width: 15%;
+    width: 25%;
     height: 3px;
     left: 0;
     bottom: -5px;
@@ -278,6 +283,10 @@ img{
     font-size: 14px;
 }
 
+.child_personal li b{
+    margin-right: 5px;
+}
+
 .custom_btn{
     background: var(--pink);
     color: #fff;
@@ -303,6 +312,10 @@ img{
     justify-content: space-between;
     margin-bottom: 5px;
     align-items: center;
+}
+
+.skill_parcentage span{
+    font-size: 14px;
 }
 
 .bar{
@@ -451,4 +464,150 @@ img{
 
 .service_01, .service_02, .service_03{
     margin-bottom: 30px;
+}
+
+
+/* portfolio section */
+
+#portfolio{
+    display: block;
+    padding: 40px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.tabs{
+    margin-top: 30px;
+}
+
+.tabs ul{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.tabs ul li{
+    margin: 0 10px;
+}
+
+.tabs ul li label{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.tabs ul li label:hover{
+    color: var(--pink);
+}
+
+
+/* panel section */
+
+.panel{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.child_panel{
+    flex-basis: 31%;
+    margin-top: 30px;
+    border: 5px solid #fff;
+    position: relative;
+    border-radius: 5px;
+}
+
+
+.overlay{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(255, 255, 255, 0.137), #020202);
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    transition: .5s;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.child_panel:hover .overlay{
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlay h3{
+    align-self: flex-start;
+}
+
+.overlay .project_icon{
+    display: inline-block;
+    align-self: flex-end;
+    color: var(--pink);
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+/* blog section */
+
+#blog{
+    display: block;
+    padding: 40px;
+    height: auto;
+
+}
+
+.blog_wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.child_blog{
+    flex-basis: 31.5%;
+    margin-top: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 0px 25px 1px lightgrey;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+}
+
+
+.blog_img{
+    position: relative;
+}
+
+.blog_img .custom_btn{
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.blog_text{
+    background: #fff;
+    padding: 20px;
+}
+
+.blog_text p{
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+.blog_text span{
+    font-size: 12px;
+}
+
+.blog_text span .highlight{
+    font-weight: 600;
 }

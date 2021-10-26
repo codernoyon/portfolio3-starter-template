@@ -29,6 +29,10 @@
         font-size: 25px;
     }
 
+    /* ================================
+    Section title edit css
+    ==================================*/
+
     /* ABOUT */
     #about{
         flex-basis: 100%;
@@ -76,6 +80,22 @@
 
     .service_04, .service_05{
         margin-bottom: 30px;
+    }
+
+
+    /* porfolio section */
+    #portfolio{
+        flex-basis: 100%;
+        height: auto;
+    }
+
+    .child_panel{
+        flex-basis: 100%;
+    }
+
+    /* blog section */
+    .child_blog{
+        flex-basis: 100%;
     }
 }
 
