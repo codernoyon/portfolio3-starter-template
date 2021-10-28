@@ -97,6 +97,17 @@
     .child_blog{
         flex-basis: 100%;
     }
+
+
+    /* contact section */
+
+    .top_child{
+        flex-basis: 100%;
+    }
+
+    .name_email input{
+        flex-basis: 100%;
+    }
 }
 
 /* tablet */
